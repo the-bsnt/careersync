@@ -1,0 +1,144 @@
+/* Admin Dashboard Layout */
+.admin-dashboard {
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dashboard-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+/* Stats Block */
+.stats {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.stats h2 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.stats ul {
+    padding: 0;
+    list-style: none;
+}
+
+.stats li {
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+/* User Table */
+.user-management {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-management h2 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.user-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.user-management th,
+.user-management td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.user-management th {
+    background-color: #f1f3f5;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.user-management tr:hover {
+    background-color: #f9f9f9;
+}
+
+.user-management a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.user-management a:hover {
+    text-decoration: underline;
+}
+
+/* Status Labels */
+.status-active {
+    color: #28a745;
+}
+
+.status-pending {
+    color: #ffc107;
+}
+
+.status-suspended {
+    color: #dc3545;
+}
+
+/* Responsive Layouts */
+@media (max-width: 768px) {
+    .admin-dashboard {
+        padding: 20px 15px;
+    }
+
+    .user-management table,
+    .stats {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .stats,
+body.dark-mode .user-management {
+    background-color: #2d2d2d;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .user-management th {
+    background-color: #3a3a3a;
+    color: #f1f1f1;
+}
+
+body.dark-mode .user-management tr:hover {
+    background-color: #333;
+}
+
+body.dark-mode .success-msg {
+    background-color: #264d36;
+    color: #a4f1c0;
+}
+
+body.dark-mode .error-msg {
+    background-color: #5e2c2c;
+    color: #ffbcbc;
+}

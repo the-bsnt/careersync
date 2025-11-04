@@ -1,0 +1,105 @@
+/* Filter Form Container */
+#filterForm {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+/* Filter Group Layout */
+.filter-group {
+    margin-bottom: 15px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Layout for Filter Row */
+.filter-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+#filterForm .btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+#filterForm .btn:hover {
+    opacity: 0.95;
+}
+
+#filterForm .btn.secondary {
+    background: #6c757d;
+    color: #fff;
+}
+
+#filterForm .btn.secondary:hover {
+    background: #5a6268;
+}
+
+#filterForm .btn {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+    }
+}
+
+/* Dark Mode for Filter Form */
+.dark-mode #filterForm {
+    background: #1e1e1e;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .filter-group label {
+    color: #ccc;
+}
+
+.dark-mode .filter-group input,
+.dark-mode .filter-group select {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode .filter-group input:focus,
+.dark-mode .filter-group select:focus {
+    border-color: #66b2ff;
+}

@@ -1,0 +1,174 @@
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+section.auth-form {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+/* Alert Box */
+.alert.error {
+    background: #ffe6e6;
+    border-left: 5px solid #e74c3c;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.alert.error ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Form Elements */
+form .form-group,
+form .form-row {
+    margin-bottom: 15px;
+}
+
+form .form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form small {
+    color: #666;
+    display: block;
+    margin-top: 4px;
+    font-size: 0.85rem;
+}
+
+
+
+.form-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-actions p {
+    margin-top: 10px;
+}
+
+/* Password Strength */
+.password-strength {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Auth Options */
+.auth-options {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.option-separator {
+    margin: 20px 0;
+    position: relative;
+}
+
+.option-separator span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.option-separator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    z-index: 0;
+}
+
+.user-type-options p {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form .form-row {
+        flex-direction: column;
+    }
+}
+
+/* Dark Mode */
+
+.dark-mode section.auth-form {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .auth-form h1 {
+    color: #f0f0f0;
+}
+
+.dark-mode .alert.error {
+    background: #4e1c1c;
+    border-left-color: #e74c3c;
+}
+
+.dark-mode form label {
+    color: #ccc;
+}
+
+.dark-mode form input[type="text"],
+.dark-mode form input[type="email"],
+.dark-mode form input[type="password"] {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode form input:focus {
+    border-color: #66b2ff;
+}
+
+.dark-mode form small {
+    color: #aaa;
+}
+
+.dark-mode .option-separator span {
+    background: #1e1e1e;
+}
